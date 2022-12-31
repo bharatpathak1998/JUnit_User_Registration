@@ -3,6 +3,7 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
     public static final String NAME_PATTERN = "^[A-Z][a-z]{2,}$";
+    public static final String EMAIL_PATTERN = "^[a-zA-Z0-9.+_-]+[@][a-zA-Z0-9]+[.]co(m|.in)$";
 
     public boolean validateFirstName(String firstName) {
         return patternChecker(firstName, NAME_PATTERN);
@@ -10,6 +11,10 @@ public class UserRegistration {
 
     public boolean validateLastName(String lastName) {
         return patternChecker(lastName, NAME_PATTERN);
+    }
+
+    public boolean validateEmailId(String emailId) {
+        return patternChecker(emailId, EMAIL_PATTERN);
     }
 
     public boolean patternChecker(String input, String fieldPattern) {
