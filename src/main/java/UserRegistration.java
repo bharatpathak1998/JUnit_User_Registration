@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
     public static final String NAME_PATTERN = "^[A-Z][a-z]{2,}$";
-    public static final String EMAIL_PATTERN = "^[a-zA-Z0-9.+_-]+[@][a-zA-Z0-9]+[.]co(m|.in)$";
+    private static final String EMAIL_PATTERN = "^[a-zA-Z0-9]+[.+-]?[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.][a-zA-Z]+[.]?[a-zA-Z]+$";
     public static final String MOBILE_PATTERN = "^[0-9]{0,2}[ ][0-9]{10}$";
     public static final String PASSWORD_PATTERN = "^(?=.*[A-Z]+)(?=.*[0-9]+).{8,}$";
 
