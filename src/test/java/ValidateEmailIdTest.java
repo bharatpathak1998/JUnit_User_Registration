@@ -32,7 +32,7 @@ public class ValidateEmailIdTest {
     }
 
     @Test
-    public void givenEmailId_WhenProper_ShouldReturnExpectedResult() {
+    public void givenEmailId_WhenProper_ShouldReturnExpectedResult() throws UserRegistrationException {
         Assert.assertEquals(this.expectedResult, userRegistration.validateEmailId(emailId));
     }
 }
